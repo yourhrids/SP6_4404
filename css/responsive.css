@@ -1,0 +1,259 @@
+/* For small device */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: 8rem;
+  }
+  .model__img {
+    width: 220px;
+  }
+  .model__tooltip-text {
+    font-size: var(--smaller-font-size);
+    transform: translate(42px, -40px);
+  }
+  .model__tooltip-1 .model__tooltip-text,
+  .model__tooltip-2 .model__tooltip-text {
+    transform: translate(40px, -40px) scaleX(-1);
+  }
+  .model__tooltip-1 {
+    top: 3rem;
+    left: 4rem;
+  }
+  .model__tooltip-2 {
+    top: 0;
+  }
+  .model__tooltip-3 {
+    bottom: 2rem;
+    left: 3rem;
+  }
+  .model__tooltip-4 {
+    right: 4rem;
+    bottom: 6rem;
+  }
+  .spoonsor__container {
+    gap: 3rem 3rem;
+  }
+  .spoonsor-img {
+    width: 70px;
+  }
+}
+
+/* For medium device */
+@media screen and (min-width: 576px) {
+  .about__container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .footer__data {
+    justify-content: center;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .spoonsor-img {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home__img {
+    width: 320px;
+  }
+  .home__title {
+    font-size: 16rem;
+    top: -4rem;
+  }
+  .home__social {
+    top: 0;
+    bottom: 0;
+    align-content: center;
+  }
+  .about__container {
+    max-width: 500px;
+  }
+  .about__img {
+    width: 320px;
+  }
+  .favorite__img {
+    width: 250px;
+  }
+  .model__img {
+    width: 320px;
+  }
+  .model__tooltip-1 {
+    top: 5rem;
+    left: 8rem;
+  }
+  .model__tooltip-2 {
+    top: 2rem;
+  }
+  .model__tooltip-3 {
+    bottom: 4rem;
+    left: 4rem;
+  }
+  .model__tooltip-4 {
+    right: 0rem;
+    bottom: 10rem;
+  }
+  .spoonsor-img {
+    width: 100px;
+  }
+  .footer__data {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .footer__logo {
+    justify-content: flex-start;
+  }
+}
+
+/* For large device */
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+  .section {
+    padding-block: 7rem 2rem;
+  }
+  .section__title {
+    font-size: var(--h1-font-size);
+  }
+  .nav {
+    /* height: calc(var(--header-height)+ 2rem); */
+    padding-block: 2.5rem;
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 4.5rem;
+  }
+  .home__container {
+    position: relative;
+  }
+  .home__img {
+    width: 500px;
+  }
+  .home__title {
+    font-size: var(--biggest-font-size);
+    top: -3.5rem;
+    column-gap: 2rem;
+  }
+  .home__tooltip {
+    right: 4rem;
+    top: 0rem;
+  }
+  .home__tooltip-img {
+    width: initial;
+  }
+  .home__tooltip-text {
+    font-size: var(--normal-font-size);
+    transform: translate(82px, -52px);
+  }
+  .home__social-text {
+    font-size: var(--normal-font-size);
+  }
+  .home__social-links {
+    row-gap: 1rem;
+  }
+  .home__social-link {
+    font-size: 1.5rem;
+  }
+  .about__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: initial;
+    margin-inline: 5rem;
+  }
+
+  .about__data {
+    text-align: left;
+  }
+
+  .about__data h2 {
+    text-align: left;
+  }
+
+  .about__description {
+    max-width: 450px;
+    margin-bottom: 3rem;
+  }
+  .about__img {
+    width: 500px;
+  }
+  .favorite__img {
+    width: 500px;
+  }
+  .model__img {
+    width: 500px;
+  }
+  .model__tooltip-1 {
+    top: 10rem;
+    left: 12rem;
+  }
+  .model__tooltip-2 {
+    top: 2rem;
+    right: 4rem;
+  }
+  .model__tooltip-3 {
+    bottom: 6rem;
+    left: 6rem;
+  }
+  .model__tooltip-4 {
+    right: 2rem;
+    bottom: 16rem;
+  }
+  .spoonsor-img {
+    width: 160px;
+  }
+  .footer__data {
+    gap: 8rem;
+    align-items: flex-start;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 3rem;
+  }
+  .footer__group {
+    margin: 0;
+  }
+  .footer__form {
+    background: var(--container-color);
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    padding: 0.25rem 1rem;
+  }
+  .footer__button {
+    margin: 0;
+    width: 45%;
+  }
+  .footer__social {
+    justify-content: flex-start;
+  }
+  .footer__copy {
+    margin-top: 5.25rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .footer__container {
+    display: flex;
+  }
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .spoonsor__container {
+    gap: 10rem;
+  }
+}

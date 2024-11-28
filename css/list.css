@@ -1,0 +1,172 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(23, 100%, 50%);
+  --gradient-color: linear-gradient(
+    90deg,
+    hsl(23, 4%, 28%) 0%,
+    hsl(23, 4%, 8%) 100%
+  );
+  --white-color: hsl(0, 0%, 100%);
+  --text-color: hsl(23, 4%, 60%);
+  --body-color: hsl(23, 12%, 4%);
+  --container-color: hsl(23, 4%, 10%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 10rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 25rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/* Product Listing CSS */
+
+/*=============== PRODUCT MANAGEMENT SECTION ===============*/
+.list-container {
+  display: grid;
+  gap: 2rem;
+  padding-block: 3rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-semi-bold);
+}
+
+/* Form styling */
+.form {
+  display: grid;
+  gap: 1.25rem;
+  padding: 2rem;
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+  font-size: var(--h3-font-size);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.5rem;
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+
+.form input[type="text"]::placeholder,
+.form input[type="number"]::placeholder {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.btn {
+  background: var(--gradient-color);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4rem;
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 24px hsla(23, 100%, 50%, 0.15);
+}
+
+.btn-danger {
+  background: hsl(0, 78%, 62%);
+}
+
+.btn-danger:hover {
+  background: hsl(0, 78%, 55%);
+}
+
+/* Product Table styling */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-table th,
+.product-table td {
+  padding: 1rem;
+  text-align: left;
+  color: var(--white-color);
+  font-size: var(--normal-font-size);
+  border-bottom: 1px solid hsl(23, 4%, 15%);
+}
+
+.product-table th {
+  background-color: var(--body-color);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+}
+
+.product-table tr:nth-child(even) {
+  background-color: hsl(23, 4%, 10%);
+}
+
+.product-table tr:hover {
+  background-color: hsl(23, 4%, 15%);
+}
+
+.product-table input[type="text"],
+.product-table input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--container-color);
+  color: var(--white-color);
+  border-radius: 0.25rem;
+}
